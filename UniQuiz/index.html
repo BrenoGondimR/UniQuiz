@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./img/logo4TEC2.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel = "preconnect" href = "https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styleboxq.css">
+    <link rel="stylesheet" href="css/styleprofile.css">
+    <link rel="stylesheet" href="css/styleresult.css">
+    <script src="questions.js" ></script>
+    
+    <title>UniQuiz</title>
+</head>
+<body>
+
+
+    <header>
+        <div class="logo"></div>
+        <ul class="menu">
+            <li> <a id="sobre" href="#">Sobre</a> </li>
+            <li> <a id="contato" href="#">Contato</a> </li>
+            <li> <a id="donation" href="#">Donate</a> </li>
+        </ul>
+    </header>
+
+
+
+
+    
+    <section class="container2">
+        <div class="containerxp">
+            <div id="xpbar">
+                <div id="xpbar2"></div>
+                <p1>0</p1>
+                <p3>100</p3>
+                <div id="xpInicio"></div>
+                <div id="xpMeio"><label id="xpMbar"></label></div>
+                <div id="xpFim"></div>
+            </div>
+
+    </section>
+  
+    <section class="container">
+        <div class="profileContainer">
+            <img src="https://github.com/RonaldLSB.png" alt="Breno Gondim" />
+            <div class="bloco-dados">
+                <strong>Ronald Barbosa</strong>
+                <p>
+                    <img src="img/level.svg" alt="Level"/>
+                    Level <label id="nivel"></label>
+                </p>
+
+            </div>
+
+            
+            <div class="teste">
+                <div class="progessonogame">
+                    <p2>Quiz Completados : <label id="Qc">0</label></p2>
+                </div>
+                <hr>
+                <div class="progessonogame">
+                    <p2>Acertos : <label id="Qa">0</label></p2>
+                </div>
+                <hr>
+                <div class="progessonogame">
+                    <p2>XP : <label id="XPatual">0</label></p2>
+                </div>
+                <hr>
+
+            </div>
+            
+            <div class="rank-users">
+                <h3>RANK USERS</h3>
+                <hr>
+                <p5>User 1</p5>
+                <hr>
+                <p6>User 2</p6>
+                <hr>
+                <p7>User 3</p7>
+                <hr>
+                <p8>User 4</p8>
+                <hr>
+
+
+            </div>
+
+            </div>
+
+           
+         <div id="divgrande">
+            <div class="home-box">
+                <h3>Categorias:</h3>  <select  id="list" onchange="getSelectedValue()">
+                    <option value="geral">Geral</option>
+                    <option value="matematica">Matematica</option>
+                    <option value="ronald">Ronald</option>
+                    <option value="serie">Serie</option>
+                    <option value="arte">Arte</option>
+                </select>
+                
+                <p>Numero Total De Questões:<span class="total-questions"></span></p>
+                <br>
+                <button type="button" class="btninicial" onclick="getSelectedValue();modal();">Iniciar Quiz</button>
+            </div>
+        </div>
+        
+
+    
+
+     <div id="divgrande2">   
+            <div id="display">
+                <div class="quiz-box custom-box">
+                    <div id="categoriaselect"><p>Categoria:</p><label id="cat"></label></div>
+                    <label id="question-numbers"></label> <hr>
+                    <label id="question-text"></label>
+                    <div class="option-container">
+                        <label class="option" id="1" onclick="getResult(id)"></label>
+                        <label class="option" id="2" onclick="getResult(id)"></label>
+                        <label class="option" id="3" onclick="getResult(id)"></label>
+                        <label class="option" id="4" onclick="getResult(id)"></label>
+                    </div>
+                    <div class="next-button">
+                        <button type="button" class="btn" onclick="next()">Next</button>
+                    </div>
+                    <div class="answers-indicator">
+                        <div id="bola1"></div>
+                        <div id="bola2"></div>
+                        <div id="bola3"></div>
+                        <div id="bola4"></div>
+                        <div id="bola5"></div>
+                    </div>   
+                </div>
+            </div>
+
+     </div>  
+
+        <div id="result2">
+            <div id="result-box">
+                <div id="totalQ">Numero de questões: 5</div>
+                <div id="acertosQ">Acertos: <label id="acertosQjs"></label></div>
+                <div id="errosQ">Erros: <label id="errosQjs"></label></div>
+                <div id="porcentagemQ">Porcentagem: <label id="porcentagemQjs"></label></div>
+                <div id="xpQ">XP: <label id="xpQjs"></label></div>
+                <button onclick="location.reload()">Jogar Novamente</button>
+            </div>
+        </div>
+    </section>
+    <div id="modal-donation" class="modal-container5">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <h3>Faça Aqui Seu Donate</h3>
+            <div class="imagensdonation">
+                <div><img src="./img/paypalll.png"></div>
+                <div><img src="./img/picpay.png"></div>
+                <div><img src="./img/pix.jpg"></div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal-contato" class="modal-container5">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <h3>Contato</h3>
+        </div>
+    </div>
+
+    <div id="modal-sobre" class="modal-container5">
+        <div class="modal">
+            <button class="fechar">X</button>
+            <h3>Sobre A 4TEC</h3>
+            <div class="img4tec">
+                <img src="">
+            </div>
+            
+        </div>
+    </div>
+    
+    
+</body>
+</html>

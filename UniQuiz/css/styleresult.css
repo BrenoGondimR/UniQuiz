@@ -1,0 +1,85 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+#result-box {
+    display: none;
+    max-width: 475px;
+    height: 350px;
+    background-color:#fafafa;
+
+    margin: 10px auto;
+    
+    padding: 15px 15px 8px;
+    border-radius: 10px;
+    
+    align-content: center;
+
+
+}
+
+#totalQ {
+    border: solid #cccccc;
+    border-radius: 10px;
+    background-color: #cccccc;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#acertosQ {
+    border: solid #cccccc;
+    border-radius: 10px;
+    background-color: #cccccc;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#errosQ {
+    border: solid #cccccc;
+    border-radius: 10px;
+    background-color: #cccccc;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#porcentagemQ {
+    border: solid #cccccc;
+    border-radius: 10px;
+    background-color: #cccccc;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#xpQ {
+    border: solid #cccccc;
+    border-radius: 10px;
+    background-color: #cccccc;
+    padding: 5px;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+
+#result-box button {
+    padding: 5px 35px;
+    background-color: #009688;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 15px;
+    cursor: pointer;
+    display: inline-block;
+
+    margin-top: 25px;
+    margin-left: 10px;
+
+    height: 45px;
+    
+}

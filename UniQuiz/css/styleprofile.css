@@ -1,0 +1,78 @@
+.profileContainer {
+    display: flex;
+    align-content: center;
+    padding: 16px;
+    width: 375px;
+    height: 565px;
+    max-width: 400px;
+}
+
+.profileContainer > img {
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    float: left;
+    
+    
+}
+
+.profileContainer div bloco-dados {
+    margin-left: 15px;
+    height: 100px;
+}
+
+.bloco-dados {
+    height: 100px;
+    margin-left: 10px;
+}
+
+.profileContainer div strong {
+    font-size: 1.8rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+.profileContainer div p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-top: 0.5rem;
+    width: 200px;
+}
+
+.profileContainer div p img {
+    margin-right: 0.1rem;
+}
+
+.container3 {
+    width: 100%;
+    height: 120px;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+
+    position: absolute;
+
+    padding: 0 125px;
+    float: left;
+
+    display: flex;
+    display: block;
+}
+
+.progessonogame {
+    width: 15rem;
+}
+
+.progessonogame p2 {
+    font-size: 1.2rem;
+
+    color: #fff;
+    
+}
+
+.container3 hr {
+    width:225px;
+
+    margin-top: 5px;
+}
